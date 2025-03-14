@@ -142,3 +142,48 @@ footer {
 .f-info-socials i:hover {
     color: #007bff;
 }
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    .navbar {
+        height: 4rem; /* Reduce navbar height */
+    }
+
+    .f-info {
+        flex-direction: column; /* Stack footer items vertically */
+        text-align: center;
+    }
+
+    .f-info-links, 
+    .f-info-socials,
+    .f-info-brand {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-info-socials i {
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+
+    .listing-card {
+        margin-bottom: 1rem; /* Reduce card spacing */
+    }
+
+    .show-img {
+        height: 20vh; /* Adjust image height */
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .form-range {
+        width: 100% !important; /* Make the range input responsive */
+    }
+}
+
